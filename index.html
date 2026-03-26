@@ -4,20 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Qronnect - Dein Soft-Landing in Querétaro</title>
+    <!-- Tailwind CSS fuer das Design -->
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <div id="root"></div>
-    <script type="module">
-      import React from 'react';
-      import ReactDOM from 'react-dom/client';
-      import App from './src/App.jsx';
-      
-      ReactDOM.createRoot(document.getElementById('root')).render(
-        React.createElement(React.StrictMode, null, 
-          React.createElement(App)
-        )
-      );
-    </script>
+    <!-- WICHTIG: Dieser Pfad sagt dem Browser, wo der Code startet -->
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
